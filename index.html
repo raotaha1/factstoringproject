@@ -1,0 +1,145 @@
+<!-- type ! + tab to get an automatic setup for HTML -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <!-- Link is used to link the html file to the css file 
+      so that formatting can be done -->
+    <title>Random Facts!</title>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" height="70" width="70" alt="Today I learned Logo" />
+      <!-- If there was a folder it would be src = "folder/logo.png" -->
+      <h1>Today I Learned</h1>
+      <button>Share a Fact</button>
+    </header>
+
+    <form class="fact-form">
+      <input type="text" placeholder="Share a fact with the world..." />
+      <span>200</span>
+      <input type="text" placeholder="Add a Trustworthy Source" />
+      <select>
+        <option value="">Choose Category:</option>
+        <option value="technology">Technology</option>
+        <option value="science">Science</option>
+        <option value="fianance">Finance</option>
+        <option value="society">Society</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="love">Love</option>
+        <option value="health">Health</option>
+        <option value="history">History</option>
+        <option value="news">News</option>
+      </select>
+      <button>Post</button>
+    </form>
+
+    <main>
+      <aside>
+        <ul>
+          <!-- ul = unorganized list. Li = list element. <aside> = sidebar usage. <section> = sectioning usage -->
+          <li>
+            <button>All</button>
+          </li>
+          <li>
+            <button>Technology</button>
+          </li>
+          <li>
+            <button>Science</button>
+          </li>
+          <li>
+            <button>Finance</button>
+          </li>
+          <li>
+            <button>Society</button>
+          </li>
+          <li>
+            <button>Entertainment</button>
+          </li>
+          <li>
+            <button>Love</button>
+          </li>
+          <li>
+            <button>Health</button>
+          </li>
+          <li>
+            <button>History</button>
+          </li>
+          <li>
+            <button>News</button>
+          </li>
+        </ul>
+      </aside>
+
+      <section>
+        <ul>
+          <li>
+            <p class="Fact">
+              React is being developed by Meta (formerly facebook)
+              <a href="https://opensource.fb.com/" target="_blank">(Source)</a>
+              <!-- The attribute, meaning the "<a>", href is a property of the element. target = "_blank" lets the page open a 
+            new tab rather than redirect the page away from the app -->
+              <span class="tag">#Technology#</span>
+            </p>
+            <div>
+              <button>👍<strong>24</strong></button>
+              <button>🤯<strong>9</strong></button>
+              <button>👎<strong>4</strong></button>
+            </div>
+          </li>
+          <li>
+            <p class="Fact">
+              Millennial dads spend 3 times as much time with their kids than
+              their fathers spent with them. In 1982, 43% of fathers had never
+              changed a diaper. Today, that number is down to 3%
+              <a
+                href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                target="_blank"
+                >(Source)</a
+              >
+              <span class="tag">#Society#</span>
+            </p>
+            <div>
+              <button>👍<strong>11</strong></button>
+              <button>🤯<strong>2</strong></button>
+              <button>👎<strong>0</strong></button>
+            </div>
+          </li>
+          <!-- <li>
+            <p class="Fact">
+              Amreen, I love everything about her. Her smile, the way she
+              giggles, her eyes, her hair, her laugh, how she can't control her
+              volume, her sense of responsiblity, her work ethic, her
+              intelligence, her stalkish nature, the way she smells, knowing she
+              cares even when shes acting nonchalant 😒, the way she chews her
+              gum, the way she demands things, her trying to pay for me even
+              though its not going to happen, and so much more. There will never
+              be another woman I love more.
+
+              <a
+                href="https://patorjk.com/misc/scrollingtext/timewaster.php?text=I+love+you"
+                target="_blank"
+                >(Source)</a
+              >
+              <span class="tag">#Love#</span>
+            </p>
+            <div>
+              <button>❤️<strong>∞</strong></button>
+              <button>💓<strong>∞</strong></button>
+              <button>💞<strong>∞</strong></button>
+            </div>
+          </li> -->
+        </ul>
+        <p>Built By Taha Rao</p>
+      </section>
+    </main>
+  </body>
+</html>

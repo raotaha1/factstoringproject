@@ -1,0 +1,42 @@
+* {
+}
+/* the asterics (*) is used to basically affect everything 
+that doesn't already have a parameter set
+so if the body{} below was default and 
+if *{color: #123abc;} would make everything in the body that color */
+
+body {
+  background-color: #1c1917;
+  color: #fafaf9;
+  font-family: "Sono", sans-serif;
+}
+
+.fact-form {
+  background-color: #404040;
+}
+
+h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2899c5;
+  font-family: "Coiny", sans-serif;
+}
+
+.Fact {
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: "sono", sans-serif;
+  background-color: #404040;
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Coiny", sans-serif;
+  background-color: #404040;
+}
+
+ul {
+  list-style: none;
+}

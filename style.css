@@ -8,6 +8,11 @@ that doesn't already have a parameter set
 so if the body{} below was default and 
 if *{color: #123abc;} would make everything in the body that color */
 
+.logo img {
+  width: 68px;
+  height: 68px;
+}
+
 body {
   background-color: #1c1917;
   color: #fafaf9;
@@ -84,4 +89,20 @@ h1 {
 
 ul {
   list-style: none;
+}
+
+.source {
+  color: #404040;
+}
+
+.source:link,
+.source:visited {
+  color: #a8a29e;
+  margin-left: 12px;
+  transition: 0.5s;
+}
+
+.source:hover,
+.source:active {
+  color: #90c6ff;
 }

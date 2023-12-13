@@ -16,10 +16,13 @@
     <title>Random Facts!</title>
   </head>
   <body>
+    <div class="container">
     <header class="header">
-      <img src="logo.png" height="70" width="70" alt="Today I learned Logo" />
-      <!-- If there was a folder it would be src = "folder/logo.png" -->
-      <h1>Today I Learned</h1>
+      <div class="logo">
+        <img src="logo.png" height="70" width="70" alt="Today I learned Logo" />
+        <!-- If there was a folder it would be src = "folder/logo.png" -->
+        <h1>Today I Learned</h1>
+      </div class="buttons">
       <button>Share a Fact</button>
     </header>
 
@@ -42,9 +45,9 @@
       <button>Post</button>
     </form>
 
-    <main>
+    <main class="main">
       <aside>
-        <ul>
+        <ul class="buttons">
           <!-- ul = unorganized list. Li = list element. <aside> = sidebar usage. <section> = sectioning usage -->
           <li>
             <button>All</button>
@@ -87,9 +90,11 @@
               <a href="https://opensource.fb.com/" target="_blank">(Source)</a>
               <!-- The attribute, meaning the "<a>", href is a property of the element. target = "_blank" lets the page open a 
             new tab rather than redirect the page away from the app -->
-              <span class="tag">#Technology#</span>
             </p>
-            <div>
+            <span class="tag" style="background-color: #3b82f6"
+              >#Technology#</span
+            >
+            <div class="vbuttons">
               <button>👍<strong>24</strong></button>
               <button>🤯<strong>9</strong></button>
               <button>👎<strong>4</strong></button>
@@ -105,41 +110,47 @@
                 target="_blank"
                 >(Source)</a
               >
-              <span class="tag">#Society#</span>
             </p>
-            <div>
+            <span class="tag" style="background-color: #eab308">#Society#</span>
+            <div class="vbuttons">
               <button>👍<strong>11</strong></button>
               <button>🤯<strong>2</strong></button>
               <button>👎<strong>0</strong></button>
             </div>
           </li>
-          <!-- <li class="Fact">
+          <li class="Fact">
             <p>
-              Amreen, I love everything about her. Her smile, the way she
-              giggles, her eyes, her hair, her laugh, how she can't control her
-              volume, her sense of responsiblity, her work ethic, her
-              intelligence, her stalkish nature, the way she smells, knowing she
-              cares even when shes acting nonchalant 😒, the way she chews her
-              gum, the way she demands things, her trying to pay for me even
-              though its not going to happen, and so much more. There will never
-              be another woman I love more.
+              Amreen, I love everything about her. Everything about her is so
+              beautiful. Her character, her ideas, her goals, her emotions, her
+              face, and most importantly her morals. There will never be another
+              woman I love more.
 
               <a
                 href="https://patorjk.com/misc/scrollingtext/timewaster.php?text=I+love+you"
                 target="_blank"
                 >(Source)</a
               >
-              <span class="tag">#Love#</span>
             </p>
-            <div>
+            <span class="tag" style="background-color: pink">#Love#</span>
+            <div class="vbuttons">
               <button>❤️<strong>∞</strong></button>
               <button>💓<strong>∞</strong></button>
               <button>💞<strong>∞</strong></button>
             </div>
-          </li> -->
+          </li>
         </ul>
         <p>Built By Taha Rao</p>
       </section>
     </main>
+  </div>
   </body>
 </html>
+
+<!-- Her smile, the way she
+              giggles, her eyes, her hair, her laugh, how she can't control her
+              volume, her sense of responsiblity, her work ethic, her
+              intelligence, her stalkish nature, the way she smells, knowing she
+              cares even when shes acting nonchalant 😒, the way she chews her
+              gum, the way she demands things, her trying to pay for me even
+              though its not going to happen, and so much more.
+             -->

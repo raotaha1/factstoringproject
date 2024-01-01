@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; /*how much around the cite will be padded which is 0 rn but in specific parts of the 
+  code its different*/
   box-sizing: border-box;
 }
 /* the asterics (*) is used to basically affect everything 
@@ -99,10 +100,46 @@ ul {
 .source:visited {
   color: #a8a29e;
   margin-left: 12px;
-  transition: 0.5s;
+  transition: 0.5s; /*slowly transitions from one button color to another ex. not selected to hover over button*/
 }
 
 .source:hover,
 .source:active {
   color: #90c6ff;
+}
+
+.btn {
+  border: none;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 0 13px;
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
+  color: inherit;
+  transition: 1s;
+}
+
+.category {
+  margin-bottom: 16px;
+}
+
+.btn:hover {
+  transform: scale(1.2) rotate(2deg);
+  transition: 1s;
+}
+
+.btn-large {
+  font-size: 20px;
+  padding: 20px 32px 17px;
+}
+
+.btn-allcat {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.btn-category {
+  width: 100%;
+  background-image: none;
 }

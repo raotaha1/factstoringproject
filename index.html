@@ -17,134 +17,191 @@
   </head>
   <body>
     <div class="container">
-    <header class="header">
-      <div class="logo">
-        <img src="logo.png" height="70" width="70" alt="Today I learned Logo" />
-        <!-- If there was a folder it would be src = "folder/logo.png" -->
-        <h1>Today I Learned</h1>
-      </div class="buttons">
-      <button>Share a Fact</button>
-    </header>
+      <header class="header">
+        <div class="logo">
+          <img
+            src="logo.png"
+            height="70"
+            width="70"
+            alt="Today I learned Logo"
+          />
+          <!-- If there was a folder it would be src = "folder/logo.png" -->
+          <h1>Today I Learned</h1>
+        </div>
+        <button class="btn btn-large">Share a Fact</button>
+      </header>
 
-    <form class="fact-form">
-      <input type="text" placeholder="Share a fact with the world..." />
-      <span>200</span>
-      <input type="text" placeholder="Add a Trustworthy Source" />
-      <select>
-        <option value="">Choose Category:</option>
-        <option value="technology">Technology</option>
-        <option value="science">Science</option>
-        <option value="fianance">Finance</option>
-        <option value="society">Society</option>
-        <option value="entertainment">Entertainment</option>
-        <option value="love">Love</option>
-        <option value="health">Health</option>
-        <option value="history">History</option>
-        <option value="news">News</option>
-      </select>
-      <button>Post</button>
-    </form>
+      <form class="fact-form">
+        <input type="text" placeholder="Share a fact with the world..." />
+        <span>200</span>
+        <input type="text" placeholder="Add a Trustworthy Source" />
+        <select>
+          <option value="">Choose Category:</option>
+          <option value="technology">Technology</option>
+          <option value="science">Science</option>
+          <option value="fianance">Finance</option>
+          <option value="society">Society</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="love">Love</option>
+          <option value="health">Health</option>
+          <option value="history">History</option>
+          <option value="news">News</option>
+        </select>
+        <button class="btn btn-large">Post</button>
+      </form>
 
-    <main class="main">
-      <aside>
-        <ul class="buttons">
-          <!-- ul = unorganized list. Li = list element. <aside> = sidebar usage. <section> = sectioning usage -->
-          <li>
-            <button>All</button>
-          </li>
-          <li>
-            <button>Technology</button>
-          </li>
-          <li>
-            <button>Science</button>
-          </li>
-          <li>
-            <button>Finance</button>
-          </li>
-          <li>
-            <button>Society</button>
-          </li>
-          <li>
-            <button>Entertainment</button>
-          </li>
-          <li>
-            <button>Love</button>
-          </li>
-          <li>
-            <button>Health</button>
-          </li>
-          <li>
-            <button>History</button>
-          </li>
-          <li>
-            <button>News</button>
-          </li>
-        </ul>
-      </aside>
+      <main class="main">
+        <aside>
+          <ul>
+            <!-- ul = unorganized list. Li = list element. <aside> = sidebar usage. <section> = sectioning usage -->
+            <li class="category">
+              <button class="btn btn-allcat">All</button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #3b82f6"
+              >
+                Technology
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #16a34a"
+              >
+                Science
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #ef4444"
+              >
+                Finance
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #eab308"
+              >
+                Society
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #db2777"
+              >
+                Entertainment
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #db2795"
+              >
+                Love
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #14b8a6"
+              >
+                Health
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #f97316"
+              >
+                History
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #8b5cf6"
+              >
+                News
+              </button>
+            </li>
+          </ul>
+        </aside>
 
-      <section>
-        <ul>
-          <li class="Fact">
-            <p>
-              React is being developed by Meta (formerly facebook)
-              <a class="source" href="https://opensource.fb.com/" target="_blank">(Source)</a>
-              <!-- The attribute, meaning the "<a>", href is a property of the element. target = "_blank" lets the page open a 
+        <section>
+          <ul>
+            <li class="Fact">
+              <p>
+                React is being developed by Meta (formerly facebook)
+                <a
+                  class="source"
+                  href="https://opensource.fb.com/"
+                  target="_blank"
+                  >(Source)</a
+                >
+                <!-- The attribute, meaning the "<a>", href is a property of the element. target = "_blank" lets the page open a 
             new tab rather than redirect the page away from the app -->
-            </p>
-            <span class="tag" style="background-color: #3b82f6"
-              >#Technology#</span
-            >
-            <div class="vbuttons">
-              <button>👍<strong>24</strong></button>
-              <button>🤯<strong>9</strong></button>
-              <button>👎<strong>4</strong></button>
-            </div>
-          </li>
-          <li class="Fact">
-            <p>
-              Millennial dads spend 3 times as much time with their kids than
-              their fathers spent with them. In 1982, 43% of fathers had never
-              changed a diaper. Today, that number is down to 3%
-              <a
-                class="source"
-                href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
-                target="_blank"
-                >(Source)</a
+              </p>
+              <span class="tag" style="background-color: #3b82f6"
+                >#Technology#</span
               >
-            </p>
-            <span class="tag" style="background-color: #eab308">#Society#</span>
-            <div class="vbuttons">
-              <button>👍<strong>11</strong></button>
-              <button>🤯<strong>2</strong></button>
-              <button>👎<strong>0</strong></button>
-            </div>
-          </li>
-          <li class="Fact">
-            <p>
-              Amreen, I love everything about her. Everything about her is so
-              beautiful. Her character, her ideas, her goals, her emotions, her
-              face, and most importantly her morals. There will never be another
-              woman I love more.
+              <div class="vbuttons">
+                <button>👍<strong>24</strong></button>
+                <button>🤯<strong>9</strong></button>
+                <button>👎<strong>4</strong></button>
+              </div>
+            </li>
+            <li class="Fact">
+              <p>
+                Millennial dads spend 3 times as much time with their kids than
+                their fathers spent with them. In 1982, 43% of fathers had never
+                changed a diaper. Today, that number is down to 3%
+                <a
+                  class="source"
+                  href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #eab308"
+                >#Society#</span
+              >
+              <div class="vbuttons">
+                <button>👍<strong>11</strong></button>
+                <button>🤯<strong>2</strong></button>
+                <button>👎<strong>0</strong></button>
+              </div>
+            </li>
+            <li class="Fact">
+              <p>
+                Amreen, I love everything about her. Everything about her is so
+                beautiful. Her character, her ideas, her goals, her emotions,
+                her face, and most importantly her morals. There will never be
+                another woman I love more.
 
-              <a
-                class="source"
-                href="https://patorjk.com/misc/scrollingtext/timewaster.php?text=I+love+you"
-                target="_blank"
-                >(Source)</a
-              >
-            </p>
-            <span class="tag" style="background-color: pink">#Love#</span>
-            <div class="vbuttons">
-              <button>❤️<strong>∞</strong></button>
-              <button>💓<strong>∞</strong></button>
-              <button>💞<strong>∞</strong></button>
-            </div>
-          </li>
-        </ul>
-        <p>Built By Taha Rao</p>
-      </section>
-    </main>
-  </div>
+                <a
+                  class="source"
+                  href="https://patorjk.com/misc/scrollingtext/timewaster.php?text=I+love+you"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: pink">#Love#</span>
+              <div class="vbuttons">
+                <button>❤️<strong>∞</strong></button>
+                <button>💓<strong>∞</strong></button>
+                <button>💞<strong>∞</strong></button>
+              </div>
+            </li>
+          </ul>
+          <p>Built By Taha Rao</p>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
 
